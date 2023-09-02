@@ -168,15 +168,14 @@ int NBr_Car(){
 
 void menuprintf(){
     printf("==========================\n");
-    printf("Choung trinh quan ly bai xe\n");
-    printf("Vui long chon mot trong cac chuc nang sau:\n");
-    printf("1. Doc du lieu tu file log\n");
-    printf("2. Tra cuu so luong xe gui/lay theo ngay trong qua khu\n");
-    printf("3. Thong tin cac xe trong bai hien tai\n");
-    printf("4. Gui them xe moi\n");
-    printf("5. Tra xe\n");
-    printf("6. Cap nhat log du lieu\n");
-    printf("7. Luu danh sach xe dang co trong bai ra file\n");
+    printf("Parking Management Program\n");
+    printf("1. Read data from log_input\n");
+    printf("2. Look up the number of cars sent/picked up by day in the past\n");
+    printf("3. Information about vehicles currently in the parking lot\n");
+    printf("4. Put more cars in the parking lot\n");
+    printf("5. Take out the car\n");
+    printf("6. Update the log_input file\n");
+    printf("7. Save the current list of vehicles to change_log file\n");
     printf("8. Exit\n");
     printf("==========================\n");
 }
@@ -184,7 +183,7 @@ void menuprintf(){
 int check_choice(){
         int choice;
         do{
-            printf("\nLua chon cua ban la:\n");
+            printf("Please choose one of these function (1-8):\n");
             menuprintf();
             scanf("%d", &choice);
             fflush(stdin);
